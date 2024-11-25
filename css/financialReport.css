@@ -1,0 +1,136 @@
+/* General */
+* {
+    color: #2c2c5f;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fc;
+    line-height: 1.6;
+}
+
+.financialReportBackground {
+    padding: 32px;
+    padding-top: 42px;
+    background-color: #ece8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.financialReportContainer {
+    background-color: #ffffff;
+    border: solid 1px #1e1133;
+    border-radius: 10px;
+    margin-top: 7px;
+    max-width: 800px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 900px;
+}
+
+/* Title Section */
+.financialReportTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.financialReportHeader{
+    background-color: #c4bcd2; 
+    padding: 20px;
+    text-align: center; 
+    color: #333; 
+    border-radius: 8px;
+}
+
+.companyInformation h1 {
+    color: #4a4a7a;
+    padding-right: 80px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+
+.companyInformation p {
+    color: #6a6a8a;
+    font-size: 0.9rem;
+}
+
+.financialReportTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c2c5f;
+}
+
+/* Date Section */
+.financialReportDateTitle,
+.financialReportDateInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.financialReportDateTitle p,
+.financialReportDateInfo p {
+    margin: 5px 0;
+}
+
+/* Divider */
+hr {
+    border: solid 1.5px hsl(262, 44%, 71%);
+    height: 1px;
+    background-color: #d1cfe1;
+    margin: 20px 0;
+}
+
+/* Main Content */
+.financialReportHeading{
+    background-color: #c4bcd2;
+    border-radius: 3px;
+    padding: 5px 2px;
+    font-weight: bold;
+}
+.financialReportMain {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+
+.financialReportMain h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c2c5f;
+    border-bottom: 2px solid #d1cfe1;
+    padding-bottom: 5px;
+}
+
+.categoryAmount {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.categoryAmount p {
+    margin: 0;
+}
+
+.alignRight {
+    text-align: right;
+    font-weight: bold;
+    color: #4a4a7a;
+}
+
+p {
+    font-size: 1rem;
+    color: #2c2c5f;
+}
+
+.hiddenSample{
+    display: none;
+}
