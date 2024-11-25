@@ -7,15 +7,11 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #f8f9fc;
-    line-height: 1.6;
-}
+
 
 .financialReportBackground {
     padding: 32px;
     padding-top: 42px;
-    background-color: #ece8f0;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -89,7 +89,7 @@ step1.addEventListener('submit', (e)=>{
                     input.textContent = "Please input valid value";
                     input.style.color = "red";
                     input.addEventListener(('input'), (e)=>{
-                        input.style.color = "black";
+                        input.style.color = "#2c2c5f";
                     })
                     isValid = false;
                 }
@@ -136,7 +136,7 @@ step1.addEventListener('submit', (e)=>{
                             input.textContent = "Please input valid value";
                             input.style.color = "red";
                             input.addEventListener(('input'), (e)=>{
-                                input.style.color = "black";
+                                input.style.color = "#2c2c5f";
                             })
                             isValid = false;
                         }
