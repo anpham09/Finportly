@@ -154,10 +154,88 @@ step1.addEventListener('submit', (e)=>{
                         } 
                         data.step3Items = step3Items;
 
-                        window.location.href = "../html/financialReport.html";
+                        goToStep(4);
+
+                        //step 4
+                        const taxRates = {
+                            alabama: 4,
+                            alaska: 0,
+                            arizona: 5.6,
+                            arkansas: 6.5,
+                            california: 7.25,
+                            colorado: 2.9,
+                            connecticut: 6.35,
+                            delaware: 0,
+                            florida: 6,
+                            georgia: 4,
+                            hawaii: 4,
+                            idaho: 6,
+                            illinois: 6.25,
+                            indiana: 7,
+                            iowa: 6,
+                            kansas: 6.5,
+                            kentucky: 6,
+                            louisiana: 4.45,
+                            maine: 5.5,
+                            maryland: 6,
+                            massachusetts: 6.25,
+                            michigan: 6,
+                            minnesota: 6.875,
+                            mississippi: 7,
+                            missouri: 4.225,
+                            montana: 0,
+                            nebraska: 5.5,
+                            nevada: 6.85,
+                            newHampshire: 0,
+                            newJersey: 6.625,
+                            newMexico: 5.125,
+                            newYork: 4,
+                            northCarolina: 4.75,
+                            northDakota: 5,
+                            ohio: 5.75,
+                            oklahoma: 4.5,
+                            oregon: 0,
+                            pennsylvania: 6,
+                            rhodeIsland: 7,
+                            southCarolina: 6,
+                            southDakota: 4.5,
+                            tennessee: 7,
+                            texas: 6.25,
+                            utah: 4.85,
+                            vermont: 6,
+                            virginia: 5.3,
+                            washington: 6.5,
+                            westVirginia: 6,
+                            wisconsin: 5,
+                            wyoming: 4,
+                        };
+                        
+
+
+                        const step4 = document.querySelector('#step4');
+                        const stateSelect = document.querySelector('#state');
+
+                        step4.addEventListener('submit', (e) => {
+                            e.preventDefault();
+
+                            const selectedState = stateSelect.value; // Lấy giá trị của state đã chọn
+                            const taxRate = taxRates[selectedState]; // Lấy thuế suất dựa trên state
+
+                            data.state = selectedState;
+                            data.taxRate = taxRate;
+
+                            console.log(data.taxRate);
+                            window.location.href = "../html/financialReport.html";
+                            
+                        });
+                        console.log("Data before saving:", data);
+                        localStorage.setItem("financialData", JSON.stringify(data));
+
+
+                        
                     }
 
-                    localStorage.setItem("financialData", JSON.stringify(data));
+                    
                 });
             }
         });

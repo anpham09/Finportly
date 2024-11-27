@@ -30,6 +30,7 @@ body {
     font-weight: bold;
     
     padding: 6.75px;
+    z-index: 1000;
 }
 
 .navBar a {

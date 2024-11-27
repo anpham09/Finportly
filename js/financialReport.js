@@ -86,11 +86,41 @@ if (ebtElement) {
 }
 
 // Calculate Net Profit
-const taxRate = 0.3; // Adjust tax rate as needed
+
+let taxRate = financialData.taxRate;
+
+// Debugging: Log the tax rate value
+console.log("Tax Rate:", taxRate);
+
+if (isNaN(taxRate) || taxRate === undefined || taxRate === null) {
+    taxRate = 0; // Fallback to 0 if taxRate is invalid
+}
+
+// Calculate Net Profit
 const netProfit = ebt - ebt * taxRate;
+
+// Debugging: Log the Net Profit calculation
+console.log("EBT:", ebt, "Tax Rate:", taxRate, "Net Profit:", netProfit);
 
 // Populate the Net Profit value in the existing element
 const netProfitElement = document.querySelector("#netProfitValue"); // Use the correct ID or class
 if (netProfitElement) {
     netProfitElement.textContent = `${netProfit.toFixed(2)}`;
 }
+
+document.getElementById("downloadPDF").addEventListener("click", () => {
+    // Chọn phần tử chứa báo cáo cần chuyển thành PDF
+    const reportElement = document.querySelector(".financialReportContainer");
+
+    // Tùy chọn cấu hình PDF
+    const options = {
+        margin: 0, // Lề trong file PDF
+        filename: 'financial_report.pdf', // Tên file PDF
+        image: { type: 'jpg', quality: 0.98 }, // Chất lượng hình ảnh
+        html2canvas: { scale: 2 }, // Độ phân giải cao hơn
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } // Định dạng trang
+    };
+
+    // Chuyển đổi HTML thành PDF và tải về
+    html2pdf().set(options).from(reportElement).save();
+});

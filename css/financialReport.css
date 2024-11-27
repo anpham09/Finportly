@@ -21,12 +21,11 @@
 
 .financialReportContainer {
     background-color: #ffffff;
-    border: solid 1px #1e1133;
+    border: solid 2px #1e1133;
+    margin-top: 5px;
     border-radius: 10px;
-    margin-top: 7px;
-    max-width: 800px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 900px;
+    width: 800px;
 }
 
 /* Title Section */
@@ -129,4 +128,31 @@ p {
 
 .hiddenSample{
     display: none;
+}
+
+
+/*Download PDF button*/
+#downloadPDF {
+    background-color: #c4bcd2;  /* Same as header background color */
+    border: solid 2px #1e1133;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #4a4a7a;  /* Same as text color */
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 155px;
+}
+
+#downloadPDF:hover {
+    background-color: hwb(270 11% 85%);  /* Darker shade for hover effect */
+    transform: scale(1.05);  /* Slightly enlarge the button on hover */
+}
+
+#downloadPDF:active {
+    background-color: #a08c9d;  /* Even darker shade for active effect */
 }
