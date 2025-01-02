@@ -188,7 +188,7 @@ body {
 }
 
 /* Mission Section */
-.mission-section {
+#mission-section {
     text-align: center;
     padding: 100px 360px;
     background-color: rgba(172, 158, 204, 0.45); /* Làm mờ phần nền bằng màu trong suốt */
@@ -198,16 +198,16 @@ body {
 }
 
 
-.mission-section p {
+#mission-section p {
     font-size: 25px;
     line-height: 1.8;
     color: black;
 }
 
-.mission-section strong {
+#mission-section strong {
     color: rgb(39, 5, 94); /* Màu vàng làm nổi bật slogan */
 }
-.mission-section span{
+#mission-section span{
     color: rgb(39, 5, 94); /* Màu vàng làm nổi bật slogan */
 }
 
