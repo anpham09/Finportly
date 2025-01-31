@@ -202,7 +202,7 @@ body {
 /* Mission Section */
 #mission-section {
     text-align: center;
-    padding: 100px 360px;
+    padding: 150px 160px;
     background-color: rgba(172, 158, 204, 0.45); /* Làm mờ phần nền bằng màu trong suốt */
     backdrop-filter: blur(4px); /* Thêm hiệu ứng làm mờ */
     width: 100%;
