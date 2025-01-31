@@ -490,16 +490,18 @@ footer {
     }
     .benefit{
         padding: 10px;
+        height: 333px;
     }
     .benefits-section{
         padding: 0px 5px;
     }
     
     #mission-section{
-        padding: 0 5px;
+        padding: 40px 5px;
     }
     #mission-section p{
         font-size: 14px;
+        padding: 20px;
     }
     #mission-section b{
         font-size: 16px;
@@ -508,15 +510,14 @@ footer {
     .opinions-section{
         max-width: 430px;
     }
+
     .testimonial-gallery{
-        max-width: 400px;
-    }
-    .testimonial-gallery{
-        max-width: 430px;;
+        max-width: 430px;
     }
     div.testimonial.active{
         max-width: 350px;
         height: 330px;
+        margin-bottom: 50px;
     }
 
     h1.heading{
