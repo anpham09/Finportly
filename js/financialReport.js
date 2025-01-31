@@ -6,6 +6,7 @@ const companyName = document.querySelector("#companyName");
 const address = document.querySelector("#address");
 const dateCreated = document.querySelector('#dateCreated');
 const dateIssued = document.querySelector('#dateIssued');
+const generateAnother = document.querySelector('#generateAnother');
 
 
 
@@ -172,4 +173,11 @@ document.getElementById("downloadPDF").addEventListener("click", () => {
 
     // Chuyển đổi HTML thành PDF và tải về
     html2pdf().set(options).from(reportElement).save();
+});
+
+generateAnother.addEventListener("click", (e)=>{
+    console.log("log sth");
+    
+    window.location.href = "../html/fillInfo.html";
+
 });

@@ -135,18 +135,20 @@ p {
 #downloadPDF{
     background-color: #c4bcd2;  /* Same as header background color */
     border: solid 2px #1e1133;
-    padding: 15px 20px;
-    font-size: 1rem;
+    padding: 25px 35px;
+    font-size: 20px;
     
     color: #4a4a7a;  /* Same as text color */
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-    position: absolute;
-    top: 60px;
-    right: 205px;
+    /* display: flex;
+    position: absolute; */
+    /* top: 60px;
+    right: 205px; */
+    margin-left: 43%;
+
 }
 
 #downloadPDF:hover {
@@ -161,18 +163,19 @@ p {
 #generateAnother{
     background-color: #c4bcd2;  /* Same as header background color */
     border: solid 2px #1e1133;
-    font-size: 1rem;
+    font-size: 20px;
     
-    padding: 15px 20px;
+    padding: 25px 35px;
     color: #4a4a7a;  /* Same as text color */
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-    position: absolute;
-    top: 115px;
-    right: 65px;
+    /* display: flex;
+    position: absolute; */
+    /* top: 115px;
+    right: 65px; */
+    margin: 10px 0px 70px 39.5%;
 }
 #generateAnother a{
     text-decoration: none;
@@ -188,6 +191,9 @@ p {
 
 @media (max-width: 430px){
     #downloadPDF{
-        display: block;
+        margin-left: 25%;
+    }
+    #generateAnother{
+        margin-left: 13%;
     }
 }
