@@ -741,6 +741,25 @@ footer {
         margin-top: 0px;
     }
 
+    @keyframes jump {
+        0%, 100% { transform: translateY(0); }
+        20% { transform: translateY(-10px); }
+        40% { transform: translateY(5px); }
+        60% { transform: translateY(-5px); }
+        80% { transform: translateY(2px); }
+    }
+      
+    .image-hover-effect {
+        transition: transform 0.2s ease-in-out;
+    }
+      
+    .image-hover-effect.hover {
+        animation: jump 0.6s ease-in-out;
+    }
+      
+      
+      
+
     .benefits-section p{
         font-size: 18px;
     }

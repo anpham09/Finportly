@@ -24,3 +24,14 @@ arrowRight.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % testimonials.length;
     updateTestimonials();
 });
+
+document.querySelectorAll('.image-hover-effect').forEach(image => {
+    image.addEventListener('mouseenter', () => {
+      image.style.animation = 'bounce 0.5s ease-in-out infinite';
+    });
+  
+    image.addEventListener('mouseleave', () => {
+      image.style.animation = 'none';
+    });
+});
+  
