@@ -79,3 +79,18 @@ button:hover {
         margin-right: 10px;
     }
 }
+
+@media (max-width: 360px){
+    .forumContainer{
+        min-width: 300px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 80px;
+    }
+    #title{
+        min-width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 40px;
+    }
+}

@@ -126,3 +126,32 @@ button.add-row {
         font-size: 14px;
     }
 }
+
+@media (max-width: 360px){
+    .bgImg{
+        max-width: 360px;
+    }
+    .container{
+        max-width: 330px;
+        margin: 170px 8px;
+    }
+    #dateIssuedLabel{
+        display: inline-block;
+        padding: 0;
+        margin-left: 13px;
+    }
+    #dateIssued{
+        margin-left: 0px;
+    }
+
+
+    .footer-section p{
+        font-size: 14px;
+    }
+    .add-row{
+        padding: 8px 5px;
+    }
+    form button{
+        padding: 8px 5px;
+    }
+}

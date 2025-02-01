@@ -424,7 +424,7 @@ footer {
     text-decoration: underline;
 }
 
-
+/*Iphone 14 Pro Max*/
 @media (max-width: 430px){
     .navBar a{
         font-size: 12px;
@@ -541,5 +541,138 @@ footer {
 @media (max-width: 400px){
     .footer-section p{
         font-size: 14px;
+    }
+}
+
+
+@media (max-width: 360px){
+    .navBar a{
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+    }
+    .navBar img{
+        width: 60px;
+        height: 20px;
+    }
+    .navBar{
+        margin: 0;
+        padding: 5px 3px;
+        justify-content: space-around;
+        max-width: 360px;
+    }
+    .navItem{
+        gap: 0;
+    }
+    .straightLine{
+        display: none;
+    }
+
+    h1.companyName{
+        font-size: 85px;
+        text-shadow: 2px 2px hwb(231 53% 7%);
+    }
+
+    .main-button{
+        width: 75px;
+        height: 75px;
+        display: flex;
+        position: relative;
+    }
+    .main-button a{
+        font-size: 10px;
+        margin: 0;
+        display: flex;
+        position: relative;
+    }
+    .main-button i{
+        display: none;
+    }
+    .image-gallery img{
+        width: 80px;
+        height: 80px;
+    }
+    .gallery-item{
+        width: 80px;
+        height: 80px;
+    }
+    /* .squareImg{
+        width: 70px;
+        height: 70px;
+    } */
+    .none_border{
+        width: 65px;
+        height: 65px;
+    }
+    .border_img{
+        width: 50px;
+        height: 50px;
+    }
+    .image-gallery{
+        margin-top: 35px;
+    }
+
+    .benefits-section p{
+        font-size: 14px;
+    }
+    .benefits-section h2{
+        font-size: 18px;
+    }
+    .title-section{
+        max-height: 210px;
+    }
+    .benefit{
+        padding: 10px;
+        height: 333px;
+    }
+    .benefits-section{
+        padding: 0px 5px;
+    }
+    
+    #mission-section{
+        padding: 20px 3px;
+    }
+    #mission-section p{
+        font-size: 12px;
+        padding: 20px;
+    }
+    #mission-section b{
+        font-size: 16px;
+    }
+
+    .opinions-section{
+        max-width: 360px;
+    }
+
+    .testimonial-gallery{
+        max-width: 360px;
+    }
+    div.testimonial.active{
+        max-width: 200px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    h1.heading{
+        font-size: 22px;
+    }
+    .testimonial{
+        margin-left: 5px;
+    }
+    .arrow-left{
+        left: 4px;
+    }
+    .arrow-right{
+        right: 0px;
+    }
+
+    .footer-section p{
+        font-size: 14px;
+    }
+    .quote-box{
+        padding:0;
+    }
+    .quotes{
+        font-size: 13px;
     }
 }

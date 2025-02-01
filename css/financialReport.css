@@ -197,3 +197,14 @@ p {
         margin-left: 13%;
     }
 }
+
+@media (max-width: 360px){
+    #downloadPDF{
+        margin-left: 25%;
+        padding: 9px;
+    }
+    #generateAnother{
+        margin-left: 13%;
+        padding: 9px;
+    }
+}
