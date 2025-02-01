@@ -458,13 +458,16 @@ footer {
     .navItem{
         gap: 0;
     }
+    .title-section{
+        max-width: 430px;
+    }
     h1.companyName{
-        font-size: 100px;
+        font-size: 40px;
         text-shadow: 2px 2px hwb(231 53% 7%);
     }
     .main-button{
         width: 100px;
-        height: 100px;
+        max-height: 100px;
         display: flex;
         position: relative;
     }
@@ -482,15 +485,19 @@ footer {
         height: 80px;
     }
     .gallery-item{
-        width: 80px;
-        height: 80px;
+        max-width: 80px;
+        max-height: 80px;
     }
     .squareImg{
-        width: 80px;
-        height: 80px;
+        max-width: 80px;
+        max-height: 80px;
     }
     .image-gallery{
         margin-top: 30px;
+    }
+    .border_img{
+        max-width: 80px;
+        max-height: 80px;
     }
 
     .benefits-section p{
@@ -499,9 +506,9 @@ footer {
     .benefits-section h2{
         font-size: 18px;
     }
-    .title-section{
+    /* .title-section{
         max-height: 210px;
-    }
+    } */
     .benefit{
         padding: 10px;
         height: 333px;
