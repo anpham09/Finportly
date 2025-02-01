@@ -94,3 +94,19 @@ button:hover {
         font-size: 40px;
     }
 }
+
+@media (max-width: 798px){
+    .forumContainer{
+        min-width: 700px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 390px;
+    }
+    #title{
+        min-width: 700px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 60px;
+        margin-top: 240px;
+    }
+}

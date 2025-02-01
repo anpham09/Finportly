@@ -208,3 +208,23 @@ p {
         padding: 9px;
     }
 }
+
+@media (max-width: 798px){
+    #downloadPDF{
+        margin-left: 42%;
+        padding: 9px;
+    }
+    #generateAnother{
+        margin-left: 35%;
+        padding: 9px;
+    }
+    .financialReportBackground{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        padding-top: 0px;
+    }
+    .financialReportContainer{
+        margin: 0;
+    }
+}
