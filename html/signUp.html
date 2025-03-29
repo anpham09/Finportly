@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/signIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navBar">
+        <img src='../img/main main text.png'>
+        <div class="navItem"><a href="../index.html">Home</a></div>
+        <div class="navItem">|</div>
+        <div class="navItem"><a href="../index.html#mission-section">About</a></div>
+        <div class="navItem">|</div>
+        <div class="navItem"><a href="../html/fillInfo.html">Create Financial Report</a></div>
+        <div class="navItem">|</div>
+        <div class="navItem"><a href="../html/forum.html">Forum</a></div>
+    </div>
+
+
+
+    <div class="account">
+        <div class="account-container">
+            <!-- <div class=""> -->
+            <p class="account-title">SIGN UP</p>
+            <form action="" id="account-form">
+                <div class="account-form-data">
+                    <label for="email" class="account-form-label">Email</label>
+                    <div class="">
+                        <input id="email" type="text" placeholder="Enter your email address" class="account-form-input input-error"
+                            name="email">
+                    </div>
+                    <p class="account-info-error">Email wrong</p>
+                </div>
+                <div class="account-form-data">
+                    <label for="password" class="account-form-label">Password</label>
+                    <div class="account-password-container">
+                        <input id="password" type="text" placeholder="Enter your password" class="account-form-input input-error"
+                            name="password">
+                        <i class="fa-regular fa-eye-slash account-eye"></i>
+                    </div>
+                    <p class="account-info-error">Password wrong</p>
+                </div>
+
+                <div class="account-form-data">
+                    <label for="cf_password" class="account-form-label">Confirm Password</label>
+                    <div class="account-password-container">
+                        <input id="cf_password" type="text" placeholder="Confir m your Password"
+                            class="account-form-input input-error" name="cf_password">
+                        <i class="fa-regular fa-eye-slash account-eye"></i>
+                    </div>
+                    <p class="account-info-error">Password wrong</p>
+                </div>
+                <button type="submit" class="account-form-btn">Register</button>
+            </form>
+            <div class="account-divide">
+                <p>OR</p>
+            </div>
+            <div class="account-social">
+                <a href="" class="account-social-link">
+                    <img src="../img/google.png" alt="">
+                </a>
+                <a href="" class="account-social-link">
+                    <img src="../img/facebook.png" alt="">
+                </a>
+            </div>
+            <div class="account-info">
+                <span>If you already have an account register</span>
+                <a href="./signIn.html">Login here !</a>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-section">
+            <img src="../img/finportly.png" alt="Finportly Logo" class="footer-logo">
+            <p>Finportly<br>Established Nov, 2024</p>
+        </div>
+        <div class="footer-section">
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+        </div>
+        <div class="footer-section">
+            <p>Contact us: <a href="mailto:support@finportly.com">support@finportly.com</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/signUp.js"></script>
+</body>
+</html>

@@ -71,7 +71,7 @@ table th {
 button {
     background-color: rgb(153, 94, 241);
     color: hwb(222 87% 7%);
-    border: solid 1px #1e1133;
+    border: solid 0.5px #1e1133;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
