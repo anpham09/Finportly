@@ -144,7 +144,7 @@ step1.addEventListener('submit', (e)=>{
                     if (isValid){
                         let step3Items = [];
                         //save every input
-                        for (let i = 0; i < step2Number.length; i++){
+                        for (let i = 0; i < step3Number.length; i++){
                             item = {
                                 number: step3Number[i].value,
                                 category: step3Category[i].textContent
