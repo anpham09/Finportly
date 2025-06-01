@@ -35,7 +35,7 @@
                 <div class="account-form-data">
                     <label for="email" class="account-form-label">Email</label>
                     <div class="">
-                        <input id="email" type="text" placeholder="Enter your email address" class="account-form-input input-error"
+                        <input id="email" type="text" placeholder="Enter your email address" class="account-form-input"
                             name="email">
                     </div>
                     <p class="account-info-error">Email wrong</p>
@@ -43,7 +43,7 @@
                 <div class="account-form-data">
                     <label for="password" class="account-form-label">Password</label>
                     <div class="account-password-container">
-                        <input id="password" type="text" placeholder="Enter your password" class="account-form-input input-error"
+                        <input id="password" type="text" placeholder="Enter your password" class="account-form-input"
                             name="password">
                         <i class="fa-regular fa-eye-slash account-eye"></i>
                     </div>
@@ -54,7 +54,7 @@
                     <label for="cf_password" class="account-form-label">Confirm Password</label>
                     <div class="account-password-container">
                         <input id="cf_password" type="text" placeholder="Confir m your Password"
-                            class="account-form-input input-error" name="cf_password">
+                            class="account-form-input" name="cf_password">
                         <i class="fa-regular fa-eye-slash account-eye"></i>
                     </div>
                     <p class="account-info-error">Password wrong</p>
@@ -94,7 +94,12 @@
         </div>
     </footer>
 
-    <script src="../js/config.js"></script>
-    <script src="../js/signUp.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script defer type="module" src="../js/config.js"></script>
+    <script defer type="module" src="../js/signUp.js"></script>
 </body>
 </html>

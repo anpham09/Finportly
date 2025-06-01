@@ -20,11 +20,23 @@
         <div class="navItem"><a href="./html/fillInfo.html">Create Financial Report</a></div>
         <div class="navItem">|</div>
         <div class="navItem"><a href="./html/forum.html">Forum</a></div>
+        <ul class="header-right">
+            <li class="header-user">
+              <!-- before -->
+              <i class="fa-solid fa-user"></i>
+              <div class="header-infor">
+                <a href="#">a@gmail.com</a>
+                <a href="#">Đăng xuất</a>
+              </div>
+              <!-- after -->
+            </li>
+          </ul>
     </div>
 
     <div class="title-section">
         <h1 class="companyName">Finportly</h1>
         <div class="image-gallery">
+            <!-- You are here -->
             <div class="gallery-item">
                 <img src="./img/replacedFirstImage.jpeg" alt="Image 1" class="none_border">
             </div>
@@ -121,7 +133,7 @@
     <footer>
         <div class="footer-section">
             <img src="./img/finportly.png" alt="Finportly Logo" class="footer-logo">
-            <p>Finportly<br>Established Nov, 2024</p>
+            <p>Finportly<br>Established May, 2025</p>
         </div>
         <div class="footer-section">
             <p><a href="./html/privacy.html">Privacy Policy</a> | <a href="./html/terms.html">Terms of Use</a></p>
@@ -131,6 +143,13 @@
         </div>
     </footer>
 
-    <script src="./js/testimonial.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer type="module" src="./js/config.js"></script>
+    <script defer type="module" src="./js/index.js"></script>
+    <script defer type="module" src="./js/testimonial.js"></script>
 </body>
 </html>
